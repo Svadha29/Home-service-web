@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    background-color: #ffcc00;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/* Dropdown container */
+.dropdown {
+    position: relative;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-weight: bold;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Add hover effect to dropdown button */
+  .dropdown:hover .dropbtn {
+    background-color: rgb(200, 131, 12);
+  }
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    background: linear-gradient(120deg, #f0f0f0, #e0e0e0); 
+}
+header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bungee-spice-regular {
+    font-family: 'Bungee Spice', sans-serif; /* Specify the Google Font and fallback fonts */
+    font-weight: 650;
+    font-style: normal;
+}
+h2{
+    font-size: 3rem;
+    font-style: oblique;
+    background-image: linear-gradient(to right, #ffd000, #4b3a06);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+}
+.image {
+    width: 100%;
+    min-height: 100vh;
+    background: #333;
+  }
+ 
+  
+.image {
+    width: 40%;
+    height: 90%;
+    z-index: 3;
+    position: relative;
+    border-radius: 15px;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    
+} 
+
+.text {
+    width: 50%;
+    height: 80%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #444;
+    line-height: 1.6; 
+}
+
+
+/* Apply the Google Font with unique and descriptive class name */
+.tilt-neon-custom {
+    font-family: 'Tilt Neon', sans-serif; /* Specify the Google Font and fallback fonts */
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "XROT" 0,
+        "YROT" 0;
+}
+
+.text h2 {
+    font-size: 3.5rem; 
+    font-weight: bold;
+    color:black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+.text p{
+    font-size:1.7rem
+}
+
+.text-div p {
+    font-size: 1rem; 
+    color: #222; /* Adjusted color for better readability */
+    line-height: 1.8;
+    font-weight: 400;
+    font-weight: bold;
+}
+.text button {
+    height:10%;
+    width: 40%; 
+    padding: 5px 15px; 
+    background-color: #333; 
+    color: #fff; 
+    border: 2px solid #333; 
+    font-weight: 600;
+    cursor: pointer; 
+    transition: background-color 0.3s ease-in-out; 
+}
+
+.text button:hover {
+    background-color: #555; 
+}
+
+.icon-div img {
+    width: 30px;
+    height: 30px;
+}
+
+.service-sec {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.service-sec::before {
+    content: " ";
+    height: 35rem;
+    width: 100%;
+    background-color: #ffcc00; 
+    position: absolute;
+    z-index: 1;
+    transform: skewY(10deg);
+    top: -30px;
+}
+.service-sec .service-left-div {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.service-left-div h3 {
+    font-size: 3rem; 
+    color: #333; 
+}
+
+.service-left-div button {
+    width: 40%; 
+    padding: 10px 15px; 
+    background-color: #333; 
+    color: #fff; 
+    border: 2px solid #333; 
+    font-weight: 600;
+    cursor: pointer; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+.service-left-div button:hover {
+    background-color: #555; 
+} 
+
+.service-sec .service-right-div {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 2;
+}
+.service-left-div p{
+    font-size: 1rem;
+    font-weight: 400;
+    color:#222;
+    font-weight: bold;
+    
+}
+.first-div, .second-div, .third-div {
+    width: 100%;
+    display: flex;
+    gap: 2.6rem;
+    align-items: center;
+}
+
+.teams-div {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+footer{
+    background: #343434;
+    padding-top: 50px;
+    background: linear-gradient(120deg, #f0f0f0, #e0e0e0); /* Same gradient as body */
+    padding-top: 65px;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 33.3%;
+}
+h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    width:190px;
+    margin: auto;
+    padding: 7px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+
+.social-icons li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+
+.social-icons li:hover::before {
+    width: 70px;
+}
+
+.social-icons li:hover a {
+    color: black; /* Change color on hover */
+}
+
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+.social-icons i:hover{
+    color: #b79519;
+}
+.bottom-bar{
+    background: #ffcc00;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+
